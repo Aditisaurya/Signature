@@ -127,7 +127,7 @@
         })
       
         fontpicker.addEventListener('change',(e)=>{
-            ctx.lineWidth= parseInst(e.target.value);
+            ctx.lineWidth = parseInt(e.target.value, 10);
         })
 
         clearbutton.addEventListener('click',()=>{
