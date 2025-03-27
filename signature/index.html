@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signature</title>
     <style>
+        body {
+            height: 100vh; /* Ensures the background covers the full screen */
+            background: #E0EAFC;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            }
+        
         .main{
              position: absolute;
              top: 50%;
@@ -12,13 +19,14 @@
              transform: translate(-50%, -50%);
             } 
         .canvas{
-            border: 2px solid black;
+            border: 1px solid rgb(37, 36, 36);
+            border-radius: 10px;
         }
         .top  {
              display: flex;
              flex-direction: row ;
              justify-content: space-between;
-             margin: 20px 0 20px 0;
+             margin: 10px 0 10px 0;
         }
         .bottom {
              display: flex;
@@ -28,6 +36,7 @@
         }
         .block, input , select, button{
             width: 80%; 
+            margin: 0.5px;
         }
         .top>.block{
             margin-top: 170px;
@@ -37,8 +46,12 @@
             margin: 10px;
         }
         .block>p{
-            margin: 10px-auto;
-            width: 50%;
+            margin: 2px-auto;
+            margin-bottom: 2px;
+            width: 100%;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
         }
         
     </style>
